@@ -82,7 +82,7 @@ nav div{
 }
 
 .section-products {
-    height: 430px;
+    height: 500px;
     background-color: #fff;
     margin: 0;
     padding: 0;
@@ -257,6 +257,18 @@ li {
 }
 
 @media (max-width:428px) {
+    .productos-carrusel .comprar {
+        padding: 10px;
+        background-color: #000 !important;
+        color: #ffffff;
+        margin: 15px auto;
+        display: block;
+        width: 126px;
+        cursor: pointer;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        display: block !important;
+    }
     .headerdesktop {
         display: none;
     }
@@ -315,6 +327,48 @@ li {
         position: absolute;
         margin-top: -30px !important;
         left: 35% !important;
+    }
+    .productos-carrusel .slick-next {
+        background-color: transparent;
+        color: transparent;
+        border: 1px solid #000;
+        border-radius: 35px;
+        cursor: pointer;
+        background-image: url("arrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        transform: rotate(-180deg);
+    }
+
+    .productos-carrusel .slick-prev {
+        background-color: transparent;
+        color: transparent;
+        border: 1px solid #000;
+        border-radius: 35px;
+        cursor: pointer;
+        background-image: url("arrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+    }
+    .productos-carrusel {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
     }
 }
 
@@ -388,4 +442,151 @@ li {
     font-family: Nunito;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media (min-width:1025px) {
+    .productos-carrusel {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 50px;
+        align-items: center;
+    }
+
+    .productos-carrusel .slick-next {
+        background-color: transparent;
+        color: transparent;
+        border: 1px solid #000;
+        border-radius: 35px;
+        cursor: pointer;
+        background-image: url("arrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        transform: rotate(-180deg);
+    }
+
+    .productos-carrusel .slick-prev {
+        background-color: transparent;
+        color: transparent;
+        border: 1px solid #000;
+        border-radius: 35px;
+        cursor: pointer;
+        background-image: url("arrow.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+    }
+    .section-products h4 {
+        margin-left: 100px;
+    }
+}
+
+.titulo-producto {
+    font-size: 12px;
+    color: #7A7A7A;
+    font-family: Nunito;
+    font-weight: SemiBold;
+    text-align: center;
+    margin: 5px;
+}
+
+.preciode {
+    font-size: 12px;
+    color: #7A7A7A;
+    font-family: Nunito;
+    text-align: center;
+    margin: 2px;
+}
+
+.meses {
+    font-size: 11px;
+    color: #7A7A7A;
+    font-family: Nunito;
+    text-align: center;
+    margin: 2px;
+}
+
+.precioa {
+    font-size: 18px;
+    color: #000000;
+    font-family: Nunito;
+    font-weight: bold;
+    text-align: center;
+    margin: 2px;
+}
+
+
+.imagen-producto {
+    margin: auto;
+}
+
+.productos-carrusel .comprar {
+    padding: 10px;
+    background-color: #000 !important;
+    color: #ffffff;
+    margin: 15px auto;
+    display: block;
+    width: 126px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: none;
+}
+
+.producto1:hover .comprar {
+     display: block !important;
+}
+.producto1:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto2:hover .comprar {
+    display: block !important;
+}
+.producto2:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto3:hover .comprar {
+    display: block !important;
+}
+.producto3:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto4:hover .comprar {
+    display: block !important;
+}
+.producto4:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto5:hover .comprar {
+    display: block !important;
+}
+.producto6:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto6:hover .comprar {
+    display: block !important;
+}
+.producto7:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto7:hover .comprar {
+    display: block !important;
+}
+.producto8:hover  {
+    background-color: #E6E8EA !important;
+    cursor: pointer;
+}
+.producto8:hover .comprar {
+    display: block !important;
 }

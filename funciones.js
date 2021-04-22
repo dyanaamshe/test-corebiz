@@ -15,6 +15,8 @@ $(document).ready(function() {
     $(".cerrar").click(function(){
         $(".contenido-oculto").fadeOut();
     })
+    
+    
 
   });
 
@@ -31,4 +33,25 @@ $(document).ready(function() {
       alert(x);
   }
 
+  $(document).ready(function(){
+    var ventana_ancho = $(window).width();
+    if (ventana_ancho < 1024) {
+        $(".productos-carrusel").slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          });
+    } 
+    if (ventana_ancho > 1025) {
+        $(".productos-carrusel").slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          });
+    } 
+  });  
 
+
+  
