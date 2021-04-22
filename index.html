@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Corebiz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <header class="headerdesktop">
+       <nav>
+            <div>
+                <img class="corbizlog" src="crbz.png" alt="logo">
+            </div>
+            <div>
+                <input class="busqueda" placeholder="¿Que estas buscando?" type="text">
+                <img class="icon-search" src="search.png" alt="">
+            </div>
+            <div class="div3nav">
+                <img class="cuentaicon" src="user.png" alt="user">
+                <p class="cuenta">Mi cuenta</p>
+            </div>
+            <div>
+                <img class="icon-carrito" src="carro.png" alt="carrito">
+                <span class="contador">0</span>
+            </div>
+       </nav>
+   </header>
+
+    <header class="headermobile">
+    <nav class="nav-mobile">
+        <div class="primercaja-mobile">
+            <div>
+                <img class="icono-hamburger" src="hambur.png" alt="">
+            </div>
+            <div class="contenido-oculto">
+                <span class="cerrar">X</span>
+                <h4>Menú hamburguesa oculto</h4>
+                <ul>
+                    <li>Categoría 1</li>
+                    <li>Categoría 2</li>
+                    <li>Categoría 3</li>
+                    <li>Categoría 4</li>
+                    <li>Categoría 5</li>
+                    <li>Categoría 6</li>
+                    <li>Categoría 7</li>
+                    <li>Categoría 8</li>
+                    <li>Categoría 9</li>
+                    <li>Categoría 10</li>
+                    <li>Categoría 11</li>
+                    <li>Categoría 12</li>
+                    <li>Categoría 13</li>
+                    <li>Categoría 14</li>
+                    <li>Categoría 15</li>
+                </ul>
+            </div>
+            <div>
+                <img class="corbizlog" src="crbz.png" alt="logo">
+            </div>
+            <div>
+                <img class="icon-carrito" src="carro.png" alt="carrito">
+                <span class="contador">0</span>
+            </div>
+        </div>
+         <div>
+            <div>
+                <input class="busqueda" placeholder="¿Que estas buscando?" type="text">
+                <img class="icon-search" src="search.png" alt="">
+            </div>
+         </div>
+    </nav>
+    </header>
+
+   <section class="banner">
+       <div><img class="banner-home" src="banner-home.jpeg" alt="Banner Home"></div>
+       <div><img class="banner-home" src="banner-home.jpeg" alt="Banner Home"></div>
+       <div><img class="banner-home" src="banner-home.jpeg" alt="Banner Home"></div>
+   </section>
+
+   <section class="root section-products">
+        <h4>Más vendidos</h4>
+   </section>
+
+   <section class="section-form">
+       <h2 class="title-form">¡Únete a nuestras novedades y promociones!</h2>
+       <form action="https://corebiz-test.herokuapp.com/api/v1/newsletter" method="POST">
+           <input id="nombre" class="add" type="text" placeholder="Ingresa tu nombre" required>
+           <input id="email" class="add" type="email" placeholder="Ingresa tu mail" required>
+           <input class="enviar" type="submit" value="Suscribirme">
+       </form>
+   </section>
+
+   <footer>
+       <div id="primer-row-footer">
+           <ul>
+               <li id="lista1">Ubicación</li>
+               <li id="lista2"></li>
+               <li id="listacomun">Avenida Andrômeda, 2000. Bloco 6 e 8</li>
+               <li id="listacomun">Alphavile SP</li>
+               <li id="listacomun">brasil@corebiz.ag</li>
+               <li id="listacomun">+55 11 3090 1039</li>
+           </ul>
+       </div>
+       <div class="boton-footer">
+           <button class="boton1-footer">CONTÁCTANOS</button>
+           <button class="boton2-footer">HABLA CON UN CONSULTOR</button>
+       </div>
+       <div class="columna3-footer">
+           <div class="clumna3-1">
+               <h3>Desarrollado por</h3>
+               <img class="" src="crbz.png" alt="logo">
+           </div>
+           <div class="clumna3-1">
+                <h3>Powered by</h3>
+                <div class="mini-imagenes">
+                    <img class="logo-vtex" src="vtex.png" alt="logo">
+                    <img class="letras-vtex" src="vtex-v.png" alt="logo">
+                    <img class="letras-vtex" src="vtex-t.png" alt="logo">
+                    <img class="letras-vtex" src="vtex-e.png" alt="logo">
+                    <img class="letras-vtex" src="vtex-x.png" alt="logo">
+                </div>
+           </div>
+       </div>
+   </footer>
+
+   <script src="funciones.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+</html>

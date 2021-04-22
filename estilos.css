@@ -1,0 +1,391 @@
+/* CSS HEADER */
+
+.headerdesktop {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+.icon-carrito {
+    width: 24px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+nav div{
+    margin: 0px 25px;
+
+}
+
+.corbizlog {
+    width: 181px;
+    height: 41px;
+    filter: invert(1);
+}
+.busqueda {
+    width: 718px;
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 13px;
+    color: #7A7A7A;
+    border-bottom: #7A7A7A solid 1px;
+}
+.cuenta { 
+    font-family: Nunito;
+    font-size: 13px;
+    color: #7A7A7A;
+}
+
+.cuentaicon {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+.div3nav {
+    display: flex;
+    align-items: center;
+}
+
+.icon-search {
+    width: 24px;
+    margin-left: -25px;
+    height: 24px;
+    background: transparent;
+    position: absolute;
+}
+
+.contador {
+    position: absolute;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Nunito;
+    background-color: #F8475F;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    border: 1px solid #F8475F;
+    border-radius: 12px;
+}
+ 
+
+/* CSS SECTION 1 */
+
+.banner-home {
+    width: 100%;
+}
+
+.section-products {
+    height: 430px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.section-form {
+    height: 146px;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+.title-form {
+    color: #333333;
+    font-family: Lato;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+}
+
+.section-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin: 15px 5px;
+}
+
+.add {
+    width: 280px;
+    height: 48px;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    color: #585858;
+    border-radius: 5px;
+    border: #f2f2f2 solid 1px;
+}
+
+.enviar {
+    width: 140px;
+    height: 48px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* css footer */
+
+footer {
+    width: 100%;
+    height: 213px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div {
+    margin: 0px 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo-vtex {
+    width: 24px;
+    height: 20px;
+}
+
+li {
+    margin: 10px 0px;
+}
+
+#lista1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Nunito;
+    font-weight: bold;
+}
+
+#lista2 {
+    width: 44px;
+    border: 5px solid #FFFFFF;
+}
+
+#listacomun {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: Nunito;
+}
+
+.boton-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-footer button {
+    width: 230px;
+    height: 40px;
+    margin: 12px 0px;
+    font-size: 12px;
+    font-family: Nunito;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton1-footer::before {
+    content: url("mensaje.png");
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    margin-left: -60px;
+}
+
+.boton1-footer .boton2-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton2-footer::before {
+    content: url("servicio.png");
+    width: 16px;
+    height: 14px;
+    padding-right: 15px;
+}
+
+.columna3-footer {
+    display: flex;
+}
+
+.clumna3-1 h3 {
+    color: #FFFFFF;
+    font-size: 10.6px;
+    font-family: Nunito;
+}
+
+.mini-imagenes {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.letras-vtex {
+    padding-top: 5px;
+}
+
+
+
+
+
+@media (max-width:1025px) {
+    nav div {
+        margin: 0px 5px;
+    }
+    .cuenta {
+        display: none;
+    }
+}
+
+@media (min-width:428px) {
+    .headermobile {
+        display: none;
+    }
+}
+
+@media (max-width:428px) {
+    .headerdesktop {
+        display: none;
+    }
+    .busqueda {
+        width: 300px;
+    }
+    nav div {
+        margin: 0px 0px;
+    }
+    .banner {
+        margin-top: 15px;
+    }
+    .title-form {
+        text-align: left;
+    }
+    .section-form {
+        height: 321px;
+        width: 100%;
+    }
+    .section-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    .add {
+        width: 320px;
+    }
+    .enviar {
+        width: 320px;
+    }
+    footer {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    div ul {
+        padding-left: 0px;
+        margin-left: 30px;
+    }
+    #primer-row-footer {
+        margin-left: 0 !important;
+    }
+    footer div {
+        margin: 0px 30px;
+    }
+    .boton-footer {
+        align-self: center;
+    }
+    .columna3-footer {
+        align-self: center;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        position: absolute;
+        margin-top: -30px !important;
+        left: 35% !important;
+    }
+}
+
+.primercaja-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.icono-hamburger {
+    width: 30px;
+    height: 20px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    margin-top: -50px;
+    left: 50%;
+}
+
+.slick-active button {
+    background-color: rgb(255, 167, 229) !important;
+}
+
+.slick-dots li button {
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+
+.contenido-oculto {
+    display: none;
+    margin-top: 935px;
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    z-index: 1;
+    height: 1000px;
+}
+
+.contenido-oculto span {
+    position: absolute;
+    right: 5%;
+    color: #f2f2f2;
+    background-color: #525252;
+    padding: 10px;
+    border: 1px solid #525252;
+    top: 1%;
+}
+
+.contenido-oculto h4 {
+    margin-left: 15px;
+}
+
+.contenido-oculto ul li {
+    margin: 15px 0px;
+}
+
+.section-products {
+    color: #000000;
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: bold;
+}
